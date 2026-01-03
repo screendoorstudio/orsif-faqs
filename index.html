@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORSIF - Radiation Safety FAQs for Healthcare Workers</title>
+    <meta name="description" content="Comprehensive FAQ database on occupational radiation safety for interventional cardiologists, radiologists, nurses, and technologists. 174 expert answers on radiation protection, dose limits, and safety equipment.">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- FAQPage Schema for SEO -->
+    <script type="application/ld+json" id="faq-schema"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/orsif_shield_mark_white.png" alt="ORSIF Logo">
+                <div>
+                    <span class="logo-text">ORSIF</span>
+                    <span class="logo-subtitle">FAQs</span>
+                </div>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://orsif-radiation-safety-guidelines.vercel.app" target="_blank">US Regulations</a></li>
+                <li><a href="https://orsif-international.vercel.app" target="_blank">International</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-logo">
+                <img src="images/orsif_logo_tagline_white.png" alt="ORSIF - Occupational Radiation Safety in Interventional Fluoroscopy">
+            </div>
+            <h1>Radiation Safety <span class="highlight">FAQs</span></h1>
+            <p class="hero-subtitle">
+                174 expert answers on occupational radiation protection for healthcare workers in fluoroscopy environments.
+            </p>
+
+            <!-- Search Box -->
+            <div class="search-container">
+                <input type="text" id="faq-search" placeholder="Search FAQs (e.g., 'cataracts', 'lead aprons', 'dose limits')..." aria-label="Search FAQs">
+                <button id="clear-search" class="clear-btn" aria-label="Clear search">×</button>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">174</span>
+                    <span class="stat-label">FAQs</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">16</span>
+                    <span class="stat-label">Categories</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Sources</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Results Section (hidden by default) -->
+    <section id="search-results" class="search-results hidden">
+        <div class="container">
+            <div class="search-header">
+                <h2>Search Results: <span id="search-term"></span></h2>
+                <p id="results-count"></p>
+            </div>
+            <div id="results-list" class="results-list"></div>
+        </div>
+    </section>
+
+    <!-- Category Navigation -->
+    <section id="category-nav" class="category-nav">
+        <div class="container">
+            <h2>Browse by Category</h2>
+            <div class="category-grid" id="category-grid">
+                <!-- Categories will be injected by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section id="faq-section" class="faq-section">
+        <div class="container">
+            <div id="faq-container">
+                <!-- FAQ categories and accordions will be injected by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Statistics Section -->
+    <section class="key-stats">
+        <div class="container">
+            <h2>Key Statistics</h2>
+            <p class="section-intro">Evidence-based data on occupational radiation risks in interventional procedures.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">10x</div>
+                    <h3>Higher Exposure</h3>
+                    <p>Interventional cardiologists receive 10x more radiation than diagnostic radiologists</p>
+                    <span class="source">Radioprotection 2025</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">6.1%</div>
+                    <h3>Cancer Incidence</h3>
+                    <p>Lifetime cancer rate in interventional cardiologists (3x general population)</p>
+                    <span class="source">SCAI 2023</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">59.8%</div>
+                    <h3>Orthopedic Injuries</h3>
+                    <p>Interventional cardiologists reporting work-related musculoskeletal injuries</p>
+                    <span class="source">SCAI 2023</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">50%</div>
+                    <h3>Dosimeter Non-Compliance</h3>
+                    <p>Physicians who don't wear or incorrectly wear radiation dosimeters</p>
+                    <span class="source">Radioprotection 2024</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">38-52%</div>
+                    <h3>Cataract Prevalence</h3>
+                    <p>Interventional cardiologists with radiation-associated lens opacities</p>
+                    <span class="source">IAEA Studies</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">85%</div>
+                    <h3>Left-Side Brain Tumors</h3>
+                    <p>Brain tumors in interventional cardiologists occurring on the left side</p>
+                    <span class="source">EuroIntervention</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who This Is For Section -->
+    <section id="audience" class="audience-section">
+        <div class="container">
+            <h2>Who This Resource Is For</h2>
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <h3>Interventional Cardiologists</h3>
+                    <p>Physicians performing cardiac catheterization, PCI, and structural heart procedures.</p>
+                </div>
+                <div class="audience-card">
+                    <h3>Interventional Radiologists</h3>
+                    <p>Physicians performing vascular interventions, embolization, and image-guided procedures.</p>
+                </div>
+                <div class="audience-card">
+                    <h3>Nurses & Technologists</h3>
+                    <p>Cath lab nurses, radiologic technologists, and imaging professionals.</p>
+                </div>
+                <div class="audience-card">
+                    <h3>Radiation Safety Officers</h3>
+                    <p>RSOs responsible for institutional radiation protection programs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Resources -->
+    <section id="resources" class="resources-section">
+        <div class="container">
+            <h2>Related ORSIF Resources</h2>
+            <div class="links-grid">
+                <a href="https://orsif-radiation-safety-guidelines.vercel.app" class="quick-link-card" target="_blank">
+                    <div class="card-icon">&#127463;&#127480;</div>
+                    <h3>US Regulations</h3>
+                    <p>Federal and state radiation safety regulations, from OSHA to state health departments.</p>
+                </a>
+                <a href="https://orsif-international.vercel.app" class="quick-link-card" target="_blank">
+                    <div class="card-icon">&#127758;</div>
+                    <h3>International Guidelines</h3>
+                    <p>ICRP, IAEA, EU directives, and country-specific radiation protection standards.</p>
+                </a>
+                <a href="https://orsif.org" class="quick-link-card" target="_blank">
+                    <div class="card-icon">&#127968;</div>
+                    <h3>ORSIF Foundation</h3>
+                    <p>Learn about ORSIF's mission to protect healthcare workers from occupational radiation.</p>
+                </a>
+                <a href="https://imagewisely.org" class="quick-link-card" target="_blank">
+                    <div class="card-icon">&#128218;</div>
+                    <h3>Image Wisely</h3>
+                    <p>Free radiation safety training and resources for healthcare professionals.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <a href="https://orsif.org" target="_blank">
+                            <img src="images/orsif_logo_white.png" alt="ORSIF">
+                        </a>
+                    </div>
+                    <p>Occupational Radiation Safety in Interventional Fluoroscopy - Comprehensive FAQ Resource</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#category-nav">Browse Categories</a></li>
+                        <li><a href="about.html">About This Resource</a></li>
+                        <li><a href="https://orsif.org" target="_blank">ORSIF Foundation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Related Resources</h4>
+                    <ul>
+                        <li><a href="https://orsif-radiation-safety-guidelines.vercel.app" target="_blank">US Regulations</a></li>
+                        <li><a href="https://orsif-international.vercel.app" target="_blank">International Guidelines</a></li>
+                        <li><a href="https://imagewisely.org" target="_blank">Image Wisely</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Disclaimer</h4>
+                    <p>This resource is for informational purposes only. Always verify current regulations with official sources and consult your institution's Radiation Safety Officer.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ORSIF. Radiation Safety FAQs for Healthcare Workers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/faq-data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
