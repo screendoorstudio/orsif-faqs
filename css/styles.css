@@ -195,7 +195,6 @@ section:nth-child(even) {
 .logo-subtitle {
     font-size: 0.75rem;
     opacity: 0.8;
-    display: block;
 }
 
 .nav-links {
