@@ -237,8 +237,8 @@ function initSearch() {
     }
 
     // Event listeners
-    searchInput.addEventListener('input', debounce(function() {
-        performSearch(this.value.trim());
+    searchInput.addEventListener('input', debounce(() => {
+        performSearch(searchInput.value.trim());
     }, 300));
 
     clearBtn.addEventListener('click', function() {
